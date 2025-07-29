@@ -169,6 +169,8 @@ def main() -> None:
         user_tags = [tag.strip() for tag in args.tags.split(",")]
         tags.extend(user_tags)
 
+    print(f"tags: {tags}")
+
     # Initialize AgentOps client
     init_agentops(api_key=os.getenv("AGENTOPS_API_KEY"), log_level=log_level)
 
