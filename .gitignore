@@ -3,6 +3,7 @@
 *.log
 *.env
 !.env-example
+temp/
 
 # Cache
 .ruff_cache/

@@ -9,8 +9,7 @@ from .templates.llm_agents import LLM, FastLLM, GuidedLLM, ReasoningLLM
 from .templates.random_agent import Random
 from .templates.reasoning_agent import ReasoningAgent
 from .templates.smolagents import SmolCodingAgent, SmolVisionAgent
-from .templates.mctsagent import MCTSAgent
-
+from .templates.arcagent import ArcAgent
 load_dotenv()
 
 AVAILABLE_AGENTS: dict[str, Type[Agent]] = {
@@ -28,7 +27,7 @@ AVAILABLE_AGENTS["reasoningagent"] = ReasoningAgent
 
 __all__ = [
     "Swarm",
-    "MCTSAgent",
+    "ArcAgent",
     "Random",
     "LLM",
     "FastLLM",
